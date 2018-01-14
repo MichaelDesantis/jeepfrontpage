@@ -4,7 +4,9 @@ I built this website replication from scratch as part of a coding challenge for 
 
 ## Table of contents
 
-* [tehcnical specifications](#specs)
+* [technical specifications](#specs)
+
+* [copy vs original performance comparison](#baseline)
 
 * [testing and build process](#tests)
 
@@ -14,6 +16,43 @@ The challenge is pretty straightforward. Recreate an exact copy of the current j
 
 A preliminary examination of the jeep.com website indicates that they're using Webpack, React, jQuery, Google Analytics, and possibly an adobe CMS. I'll attempt to stick to the technologies in use and limit the use of any technologies, frameworks, or libraries that are not in use on the real website.
 
-## Tests
+FONT : Roboto
+FONT COLOR : Pure white on black bg. Pure black on white bg. Shade of grey on grey background.
 
-I'll place any relevant tests here as I built this website.
+## Baseline
+
+As of 1/11/2018 @ 5:30pm CST on a 2016 MacBook Pro 2.7 GHz Intel Core i5 running OSX 10.11.3, opened in Google Chrome version 63, over a Google Fiber internet setup operating at 52.7 Mbps down and 37.3 Mbps up; jeep.com's front page currently rates in at the following scores using Google Chrome's lighthouse auditing tool:
+
+![alt tag](./imagesForReadme/lighthouse_scores.png)
+
+45/100 on Progressice Web Application. Points of note include : 
+
+* No firstMeaningfulPaint event in trace when throttled down to simulare 3g network speeds.
+
+* Does not register a service worker, responds with 200 OK even when offline, no configured splash screen, and Address bar not matching brand colors.
+
+(In all fairness, most all of these can be resolved with a manifest.json & service worker. But it's fair to point out that Google has been spearheading the whole push towards Progressive Web Applications, and not everyone is onboard with it yet. So it's the exception rather than the rule if a web application scores very well in this category. I'm honestly more concerned with fixing the 3G network speed issue than I am with the service workers and manifest)
+
+0/100 on Performance
+
+* All errors are related to the total size of the web page. At 132 network requests and 3.5MB of data, this website loads slower than most. DOMContent varies between 1.58 - 2.05 seconds, Load between 3.40-4.05 seconds. But network requests continue until Finish which varies between 10.27 and 11.38 seconds.
+
+![alt tag](./imagesForReadme/network_metrics.png)
+
+86/100 on Accessibility
+
+* A few images are missing 'alt' attributes.
+
+* A few ids are being used more than once on the page.
+
+69/100 on Best Practices 
+
+* Uses `document.write()`.
+
+* Includes jQuery 1.11.2, which is outdated and may have security vulnerabilities.
+
+* Does not use images with appropriate aspect ratio. 
+
+## Project
+
+## Tests
