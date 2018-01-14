@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin
+Disallow: /dev
+Disallow: /temp
+Disallow: /tmp/
+Disallow: /imagesForReadme/
