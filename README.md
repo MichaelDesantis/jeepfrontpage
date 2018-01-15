@@ -60,6 +60,8 @@ As of 1/11/2018 @ 5:30pm CST on a 2016 MacBook Pro 2.7 GHz Intel Core i5 running
 
 ## Project
 
+* robots.txt
+
 * includes manifest
 
 * noscript tags

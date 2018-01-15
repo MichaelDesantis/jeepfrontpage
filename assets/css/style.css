@@ -1,3 +1,78 @@
+/***** 
+TABLE OF CONTENTS 
+
+    Global styles and theme colors
+    Header and Nav
+    Burger Menu and Dropdown Modal
+    Image Banner Carousel
+    Counter
+    Image Gallery
+    Vehicle Listings
+    Trade in and site map links
+    Footer
+    Media Queries
+
+*****/
+
+/*****
+GLOBAL STYLES / THEME COLORS
+*****/
+
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+/*****
+HEADER AND NAV
+*****/
+
+/*****
+MENU/MODALS
+*****/
+
+/*****
+IMAGE BANNER CAROUSEL
+*****/
+
+/*****
+COUNTER
+*****/
+
+/*****
+IMAGE GALLERY
+*****/
+
+/*****
+VEHICLE LISTINGS
+*****/
+
+/*****
+TRADE IN / SITE MAP
+*****/
+
+/*****
+FOOTER
+*****/
+
+/*****
+MEDIA QUERIES
+*****/
+@media(max-width: 1280px) {
+	
+} /* End 961 - 1280px */
+
+@media(max-width: 960px) {
+	
+} /* End 769 - 960px */
+
+@media(max-width: 768px) {
+	
+} /* End 641px - 768px */
+
+@media(max-width: 640px) {
+
+} /* End 481 - 640px */
+
+@media(max-width: 480px) {
+	
+} /* End < 480px */
