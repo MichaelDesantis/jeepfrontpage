@@ -64,27 +64,62 @@ HEADER AND NAV
 *****/
 
 header {
-    display:flex;
-    max-height:80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-height: 80px;
     min-height: 45px;
     position: absolute;
-    width:100%;
+    width: 100%;
 }
 
 .logo-img-wrapper {
-    height:25px;
+    height: 25px;
     margin: 10px 15px;
-    width:65px;
+    width: 65px;
 }
 
 .logo-img-wrapper img {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
 }
+
+.menubar {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.menubar span {
+    padding-right: 20px;
+}
+
+.menubar:last-child {
+    padding-right: 0px;
+}
+
+.over480px ,
+.over660px ,
+.over800px ,
+.over1000px {
+    display: none;
+}
+
+.under480px ,
+.under660px ,
+.under800px ,
+.under1000px {
+    display: inline-block;
+}
+
 
 /*****
 MENU/MODALS
 *****/
+.menu-li {
+    font-size: 13px;
+}
 
 /*****
 IMAGE BANNER CAROUSEL
@@ -119,33 +154,53 @@ MEDIA QUERIES
 *****/
 
 @media screen and (min-width: 480px) {
-    h1{
-        color: #ccc;
+    .over480px {
+        display: inline-block;
+    }
+
+    .under480px {
+        display: none;
     }
 }
 
 @media screen and (min-width: 660px) {
     header {
-        height:80px;
+        height: 80px;
     }
 
     .logo-img-wrapper {
-        height:45px;
-        margin: 17.5px 25px;
-        width:110px;
+        height: 40px;
+        margin: 20px 25px 20px 0px;
+        width: 100px;
+    }
+
+    .over660px {
+        display: inline-block;
+    }
+
+    .under660px {
+        display: none;
     }
 
 }
 
 @media screen and (min-width: 800px) {
-    h1{
-        color: #999;
+    .over800px {
+        display: inline-block;
+    }
+
+    .under800px {
+        display: none;
     }
 }
 
 @media screen and (min-width: 1000px) {
-    h1{
-        color: #777;
+    .over1000px {
+        display: inline-block;
+    }
+
+    .under1000px {
+        display: none;
     }
 }
 
