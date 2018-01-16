@@ -10,6 +10,8 @@ I built this website replication from scratch as part of a coding challenge for 
 
 * [testing and build process](#tests)
 
+* [easter egg](#ferrari)
+
 ## Specs
 
 The challenge is pretty straightforward. Recreate an exact copy of the current jeep.com front page. The only constraints specified by the client were that I must use Twitter bootstrap to build it (no specific version. 3 or 4 are both acceptable). This application, just like the original page, must also be fully mobile responsive.
@@ -48,7 +50,7 @@ As of 1/11/2018 @ 5:30pm CST on a 2016 MacBook Pro 2.7 GHz Intel Core i5 running
 
 * A few ids are being used more than once on the page.
 
-* While technically not listed under this section, the original website uses javascript to asynchronously load in assets and images after the document has loaded (usually a good thing to ensure faster initial page load). However, the original page does not provide a fallback notice or content (missing `<noscript>` tag). The same page still renders with javascript disabled, albiet with a lot of missing images and broken functionality. I consider this bad practice. Why make the user wait for a website to load that they can't interact with? I'd rather display a fallback notice requesting that the user enable javascript in their browser.
+* While technically not listed under this section, the original website uses javascript to asynchronously load in assets and images after the document has loaded (usually a good thing to ensure faster initial page load). However, the original page does not provide a fallback notice or content (missing `<noscript>` tag) if JavaScript is Disabled. The same page still renders with javascript disabled, albiet with a lot of missing images and broken functionality. In my copy I've added a simple fallback notice requesting that the user enable javascript in their browser.
 
 69/100 on Best Practices 
 
@@ -67,3 +69,7 @@ As of 1/11/2018 @ 5:30pm CST on a 2016 MacBook Pro 2.7 GHz Intel Core i5 running
 * noscript tags
 
 ## Tests
+
+## Ferrari
+
+I've also deployed this on a separate branch but with different images, theme colors, and text. Have fun!

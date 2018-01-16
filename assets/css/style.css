@@ -1,6 +1,7 @@
 /***** 
 TABLE OF CONTENTS 
 
+    Structure of CSS
     Global styles and theme colors
     Header and Nav
     Burger Menu and Dropdown Modal
@@ -9,8 +10,19 @@ TABLE OF CONTENTS
     Image Gallery
     Vehicle Listings
     Trade in and site map links
+    Social Media Links
     Footer
     Media Queries
+
+*****/
+
+/*****
+STRUCTUTRE OF CSS
+
+Rule listing order within an individual rule set is in alphabetical order.
+Rule sets within a section are ordered by specificity. Global > Element > Classes > ID. Classes within a section will also be in alphabetical order.
+
+This web app is designed with a mobile-first approach. All media queries are ordered from smallest screen size first to largest screen size last. 
 
 *****/
 
@@ -22,9 +34,53 @@ GLOBAL STYLES / THEME COLORS
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    color: #000;
+}
+
+.theme-primary {
+    background-color: #000;
+    color:#000;
+}
+
+.theme-primary-accent {
+    color:#FFF;
+}
+
+.theme-secondary {
+    color: #191919;
+}
+
+.theme-secondary-accent {
+    color: #C7C7C7;
+}
+
+.theme-contrast-color {
+    color: #FDAD0A;
+}
+
 /*****
 HEADER AND NAV
 *****/
+
+header {
+    display:flex;
+    max-height:80px;
+    min-height: 45px;
+    position: absolute;
+    width:100%;
+}
+
+.logo-img-wrapper {
+    height:25px;
+    margin: 10px 15px;
+    width:65px;
+}
+
+.logo-img-wrapper img {
+    height:100%;
+    width:100%;
+}
 
 /*****
 MENU/MODALS
@@ -51,28 +107,50 @@ TRADE IN / SITE MAP
 *****/
 
 /*****
+SOCIAL MEDIA
+*****/
+
+/*****
 FOOTER
 *****/
 
 /*****
 MEDIA QUERIES
 *****/
-@media(max-width: 1280px) {
-	
-} /* End 961 - 1280px */
 
-@media(max-width: 960px) {
-	
-} /* End 769 - 960px */
+@media screen and (min-width: 480px) {
+    h1{
+        color: #ccc;
+    }
+}
 
-@media(max-width: 768px) {
-	
-} /* End 641px - 768px */
+@media screen and (min-width: 660px) {
+    header {
+        height:80px;
+    }
 
-@media(max-width: 640px) {
+    .logo-img-wrapper {
+        height:45px;
+        margin: 17.5px 25px;
+        width:110px;
+    }
 
-} /* End 481 - 640px */
+}
 
-@media(max-width: 480px) {
-	
-} /* End < 480px */
+@media screen and (min-width: 800px) {
+    h1{
+        color: #999;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h1{
+        color: #777;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    h1{
+        color: #555;
+    }
+}
