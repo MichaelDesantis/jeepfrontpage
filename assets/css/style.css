@@ -6,7 +6,6 @@ TABLE OF CONTENTS
     Header and Nav
     Burger Menu and Dropdown Modal
     Image Banner Carousel
-    Counter
     Image Gallery
     Vehicle Listings
     Trade in and site map links
@@ -52,7 +51,7 @@ body {
 }
 
 .theme-secondary-accent {
-    color: #C7C7C7;
+    color: #7C7C7C;
 }
 
 .theme-contrast-color {
@@ -71,6 +70,10 @@ header {
     min-height: 45px;
     position: absolute;
     width: 100%;
+}
+
+.large-menu {
+    margin-left: -10px;
 }
 
 .logo-img-wrapper {
@@ -99,13 +102,7 @@ header {
     padding-right: 0px;
 }
 
-.over480px ,
-.over660px ,
-.over800px ,
-.over1000px {
-    display: none;
-}
-
+/* Here the utility classes are out of order. This is intentional, as we want any maximum screen size rules to superceed these minimum size rules. Maintaining the proper display:none attributes over display:inline-block.*/
 .under480px ,
 .under660px ,
 .under800px ,
@@ -113,20 +110,27 @@ header {
     display: inline-block;
 }
 
-
-/*****
-MENU/MODALS
-*****/
-.menu-li {
-    font-size: 13px;
+.over480px ,
+.over660px ,
+.over800px ,
+.over1000px {
+    display: none;
 }
 
 /*****
-IMAGE BANNER CAROUSEL
+MENU/MODALS (mostly modals)
 *****/
+.menu-li {
+    font-size: 12px;
+    font-weight: 700;
+}
 
+.menu-li i {
+    font-size: 14px;
+    padding: 4px;
+}
 /*****
-COUNTER
+IMAGE BANNER CAROUSEL
 *****/
 
 /*****
@@ -170,7 +174,7 @@ MEDIA QUERIES
 
     .logo-img-wrapper {
         height: 40px;
-        margin: 20px 25px 20px 0px;
+        margin: 20px 10px;
         width: 100px;
     }
 
@@ -195,6 +199,24 @@ MEDIA QUERIES
 }
 
 @media screen and (min-width: 1000px) {
+    .menubar {
+        width: 40%;
+    }
+
+    .menu-li {
+        font-size: 10px;
+        padding: 0px 10px;
+    }
+
+    .menubar span {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    .menubar:last-child {
+        padding-right: 15px;
+    }
+
     .over1000px {
         display: inline-block;
     }
@@ -205,7 +227,11 @@ MEDIA QUERIES
 }
 
 @media screen and (min-width: 1280px) {
-    h1{
-        color: #555;
+    .large-menu {
+        margin-left: -100px;
+    }
+
+    .menu-li {
+        font-size: 12px;
     }
 }
