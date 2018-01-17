@@ -4,7 +4,7 @@ TABLE OF CONTENTS
     Structure of CSS
     Global styles and theme colors
     Header and Nav
-    Burger Menu and Dropdown Modal
+    Burger Menu and Dropdown Modals
     Image Banner Carousel
     Image Gallery
     Vehicle Listings
@@ -39,15 +39,15 @@ body {
 
 .theme-primary {
     background-color: #000;
-    color:#000;
+    color: #000;
 }
 
 .theme-primary-accent {
-    color:#FFF;
+    color: #FFF;
 }
 
 .theme-secondary {
-    color: #191919;
+    color: #2F2F2F;
 }
 
 .theme-secondary-accent {
@@ -56,6 +56,21 @@ body {
 
 .theme-contrast-color {
     color: #FDAD0A;
+}
+
+/* Here the utility classes are out of order. This is intentional, as we want any maximum screen size rules to superceed these minimum size rules. Maintaining the proper display:none attributes over display:inline-block.*/
+.under480px ,
+.under660px ,
+.under800px ,
+.under1000px {
+    display: inline-block;
+}
+
+.over480px ,
+.over660px ,
+.over800px ,
+.over1000px {
+    display: none;
 }
 
 /*****
@@ -68,7 +83,7 @@ header {
     justify-content: space-between;
     max-height: 80px;
     min-height: 45px;
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
@@ -95,26 +110,11 @@ header {
 }
 
 .menubar span {
-    padding-right: 20px;
+    padding-right: 15px;
 }
 
 .menubar:last-child {
     padding-right: 0px;
-}
-
-/* Here the utility classes are out of order. This is intentional, as we want any maximum screen size rules to superceed these minimum size rules. Maintaining the proper display:none attributes over display:inline-block.*/
-.under480px ,
-.under660px ,
-.under800px ,
-.under1000px {
-    display: inline-block;
-}
-
-.over480px ,
-.over660px ,
-.over800px ,
-.over1000px {
-    display: none;
 }
 
 /*****
@@ -132,6 +132,39 @@ MENU/MODALS (mostly modals)
 /*****
 IMAGE BANNER CAROUSEL
 *****/
+
+.carousel-main {
+    
+}
+
+.carousel-top-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20px;
+    list-style-type: none;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    position: relative;
+    width: 100vw;
+}
+
+.carousel-top-bar li {
+    background-color: #2F2F2F;
+    border-right: 1px solid #FFF; 
+    height: 10px;
+    margin: 0px;
+    width: 100%;
+
+}
+
+.carousel-top-bar li:last-child {
+    border-right: none;
+}
+
+.carousel-top-bar li.active {
+    background-color: #FDAD0A;
+}
 
 /*****
 IMAGE GALLERY
@@ -200,7 +233,8 @@ MEDIA QUERIES
 
 @media screen and (min-width: 1000px) {
     .menubar {
-        width: 40%;
+        width: 39%;
+        padding-left: 0px;
     }
 
     .menu-li {
