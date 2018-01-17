@@ -120,6 +120,7 @@ header {
 /*****
 MENU/MODALS (mostly modals)
 *****/
+
 .menu-li {
     font-size: 12px;
     font-weight: 700;
@@ -129,6 +130,7 @@ MENU/MODALS (mostly modals)
     font-size: 14px;
     padding: 4px;
 }
+
 /*****
 IMAGE BANNER CAROUSEL
 *****/
@@ -141,6 +143,7 @@ IMAGE BANNER CAROUSEL
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 20px;
+    height: 0px;
     list-style-type: none;
     margin: 0px;
     margin-top: 10px;
@@ -155,7 +158,6 @@ IMAGE BANNER CAROUSEL
     height: 10px;
     margin: 0px;
     width: 100%;
-
 }
 
 .carousel-top-bar li:last-child {
@@ -164,6 +166,19 @@ IMAGE BANNER CAROUSEL
 
 .carousel-top-bar li.active {
     background-color: #FDAD0A;
+}
+
+.carousel-vertical-button {
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-vertical-button span:first-child {
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    padding: 20px;
 }
 
 /*****
@@ -232,6 +247,10 @@ MEDIA QUERIES
 }
 
 @media screen and (min-width: 1000px) {
+    .carousel-vertical-button {
+        display: flex;
+    }
+
     .menubar {
         width: 39%;
         padding-left: 0px;
