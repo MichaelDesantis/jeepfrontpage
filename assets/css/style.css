@@ -50,6 +50,10 @@ body {
     color: #2F2F2F;
 }
 
+.theme-secondary-bg {
+    background-color: #2F2F2F;
+}
+
 .theme-secondary-accent {
     color: #7C7C7C;
 }
@@ -135,6 +139,36 @@ MENU/MODALS (mostly modals)
 IMAGE BANNER CAROUSEL
 *****/
 
+.advertisement-block {
+    background: inherit;
+    padding: 15px;
+    /*needs absolute positioning, offset, z-index at 100px+*/
+}
+
+.advertisement-block img{
+    height: auto;
+    width: 160px;
+}
+
+.advertisement-block span{
+    font-size: .75em;
+}
+
+.carousel-inner aside{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60px;
+    text-align: center;
+}
+
+.carousel-inner aside h3 {
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
 .carousel-main {
     
 }
@@ -179,6 +213,14 @@ IMAGE BANNER CAROUSEL
     border: 5px solid #FFF;
     border-radius: 50%;
     padding: 20px;
+}
+
+.outsource-link {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 30px 15px;
+    text-align: center;
 }
 
 /*****
@@ -247,6 +289,10 @@ MEDIA QUERIES
 }
 
 @media screen and (min-width: 1000px) {
+    aside.outsource-link {
+        display: none;
+    }
+
     .carousel-vertical-button {
         display: flex;
     }

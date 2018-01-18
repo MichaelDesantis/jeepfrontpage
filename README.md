@@ -66,5 +66,11 @@ As of 1/11/2018 @ 5:30pm CST on a 2016 MacBook Pro 2.7 GHz Intel Core i5 running
 
 * noscript tags
 
+* Boost chevron size
+
+* Change carousel buttons (use bootstrap default)
+
+* Using only Roboto. (Original is using Proxima Nova headers, not free or open source)
+
 ## Tests
 
