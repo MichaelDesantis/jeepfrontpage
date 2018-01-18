@@ -141,7 +141,6 @@ IMAGE BANNER CAROUSEL
 
 .advertisement-block {
     padding: 15px;
-    /*needs absolute positioning, offset, z-index at 100px+*/
 }
 
 .advertisement-block img {
@@ -184,7 +183,7 @@ IMAGE BANNER CAROUSEL
     background-color: #7C7C7C;
 }
 
-.carousel-inner aside{
+.carousel-inner aside {
     align-content: center;
     align-items: center;
     display: flex;
@@ -309,7 +308,6 @@ MEDIA QUERIES
     .under660px {
         display: none;
     }
-
 }
 
 @media screen and (min-width: 800px) {
@@ -323,12 +321,38 @@ MEDIA QUERIES
 }
 
 @media screen and (min-width: 1000px) {
-    .advertisement-block{
-        background: inherit;
-    }
-    
     aside.outsource-link {
         display: none;
+    }
+
+    .advertisement-block{
+        align-items: flex-start;
+        background: inherit;
+        margin-left: 10%;
+        max-width: 40%;
+        position: absolute;
+        text-align: left;
+        top: 0;
+    }
+
+    .button-row {
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+
+    .button-row button {
+        margin-left: 0px;
+        margin-right: 16px;
+    }
+
+    .carousel-inner aside {
+        align-items: left;
+        text-align: left;
+    }
+
+    .carousel-inner aside h2 {
+        font-size: 36px;
+        line-height: 36px;
     }
 
     .carousel-vertical-button {
@@ -361,9 +385,23 @@ MEDIA QUERIES
     .under1000px {
         display: none;
     }
+
+    #right-offset {
+        right: 10%;
+    }
 }
 
 @media screen and (min-width: 1280px) {
+    .advertisement-block img {
+        height: auto;
+        width: 220px;
+    }
+
+    .carousel-inner aside h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
     .large-menu {
         margin-left: -100px;
     }
