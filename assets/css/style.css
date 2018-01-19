@@ -256,6 +256,41 @@ IMAGE BANNER CAROUSEL
 IMAGE GALLERY
 *****/
 
+.image-gallery-main {
+    background-color: #C7C7C7;
+    padding: 20px;
+    margin: 0;
+    width: 100vw;
+}
+
+.image-gallery-main figure {
+    width: 100%;
+}
+
+.image-gallery-main figure:last-child {
+    margin-bottom: 0px;
+}
+
+.image-gallery-main figure figcaption {
+    background-color: #2F2F2F;
+    color: #FFF;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: space-between;
+    padding: 4px;
+    text-align: right;
+    width:100%;
+}
+
+.image-gallery-main figure figcaption span:first-child {
+    padding-left: 20px;
+}
+
+.image-gallery-main figure img {
+    width: 100%;
+}
+
 /*****
 VEHICLE LISTINGS
 *****/
@@ -293,6 +328,19 @@ MEDIA QUERIES
 @media screen and (min-width: 660px) {
     header {
         height: 80px;
+    }
+
+    .image-gallery-main {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 0px 0px 20px;
+    }
+
+    .image-gallery-main figure {
+        padding-bottom: 20px;
+        padding-right: 20px;
+        margin: 0;
     }
 
     .logo-img-wrapper {
@@ -377,6 +425,12 @@ MEDIA QUERIES
 
     .carousel-vertical-button {
         display: flex;
+    }
+
+    .image-gallery-main {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .menubar {
