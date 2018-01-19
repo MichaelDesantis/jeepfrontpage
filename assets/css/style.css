@@ -35,6 +35,8 @@ GLOBAL STYLES / THEME COLORS
 
 body {
     color: #000;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .theme-primary {
@@ -259,12 +261,13 @@ IMAGE GALLERY
 .image-gallery-main {
     background-color: #C7C7C7;
     padding: 20px;
+    max-width: 100vw;
     margin: 0;
-    width: 100vw;
 }
 
 .image-gallery-main figure {
-    width: 100%;
+    margin: 0;
+    max-width: 100%;
 }
 
 .image-gallery-main figure:last-child {
@@ -431,6 +434,12 @@ MEDIA QUERIES
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: repeat(4, 1fr);
+        padding: 20px 0px 20px 20px; 
+    }
+
+    .image-gallery-main figure{
+        padding-bottom: 0px;
+        padding-right: 20px;
     }
 
     .menubar {
