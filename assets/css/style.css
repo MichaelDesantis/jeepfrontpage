@@ -329,7 +329,7 @@ VEHICLE LISTINGS
 }
 
 .vehicle-listings-main {
-
+    padding-bottom: 40px;
 }
 
 .vehicle-listings-main h3 {
@@ -369,6 +369,10 @@ MEDIA QUERIES
     .under480px {
         display: none;
     }
+
+    .vehicle-listings-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (min-width: 660px) {
@@ -401,6 +405,10 @@ MEDIA QUERIES
 
     .under660px {
         display: none;
+    }
+
+    .vehicle-listings-container {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     }
 }
 
