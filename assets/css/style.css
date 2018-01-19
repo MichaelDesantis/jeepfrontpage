@@ -267,6 +267,7 @@ IMAGE GALLERY
 
 .image-gallery-main figure {
     margin: 0;
+    margin-bottom: 20px;
     max-width: 100%;
 }
 
@@ -297,6 +298,48 @@ IMAGE GALLERY
 /*****
 VEHICLE LISTINGS
 *****/
+
+.vehicle-listings-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    padding: 0px 10px;
+    width: 100%;
+}
+
+.vehicle-listings-container figure {
+    margin: 5% 10%;
+    text-align: center;
+    width: 80%;
+}
+
+.vehicle-listings-container figure img {
+    width:100%;
+}
+
+.vehicle-listings-container figure h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    margin: -3px 0;
+}
+
+.vehicle-listings-container figure span {
+    font-size: 8px;
+}
+
+.vehicle-listings-main {
+
+}
+
+.vehicle-listings-main h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 35px;
+    text-align: center;
+    width: 100%;
+}
 
 /*****
 TRADE IN / SITE MAP
