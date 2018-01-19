@@ -345,6 +345,58 @@ VEHICLE LISTINGS
 TRADE IN / SITE MAP
 *****/
 
+.kbb-trade-in {
+    align-content: center;
+    background-color: #d1d1d1;
+    padding: 20px;
+    width: 100%;
+}
+
+.kbb-trade-in aside {
+    padding: 15px;
+    text-align: center;
+}
+
+.kbb-trade-in aside h3{
+    color: #333;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 0 1em;
+}
+
+.kbb-trade-in aside h5{
+    display: inline;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.kbb-trade-in aside span {
+    width: 100%;
+}
+
+.kbb-trade-in aside span i {
+    margin-left: 35%;
+    margin-right: -35%;
+}
+
+.kbb-trade-in aside p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    padding: 0 5%;
+}
+
+.kbb-trade-in div {
+    margin: 0% auto;
+    max-width: 150px;
+    width: 42%;
+}
+
+.kbb-trade-in div > img {
+    height: auto;
+    width:100%
+}
+
 /*****
 SOCIAL MEDIA
 *****/
@@ -360,6 +412,15 @@ MEDIA QUERIES
 @media screen and (min-width: 480px) {
     .button-row {
         flex-direction: row;
+    }
+
+    .kbb-trade-in {
+        padding-top: 30px;
+    }
+
+    .kbb-trade-in aside span i {
+        margin-left: 8px;
+        margin-right: -8px;
     }
 
     .over480px {
