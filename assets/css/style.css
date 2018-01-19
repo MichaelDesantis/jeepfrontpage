@@ -428,6 +428,7 @@ TRADE IN / SITE MAP
 }
 
 .search-bar-input input {
+    border: none;
     width: calc(100% - 115px)
 }
 
@@ -437,12 +438,16 @@ TRADE IN / SITE MAP
     padding-bottom: 40px;
 }
 
-.search-links ul {
+.search-links ul:first-child{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(140px, 1fr));
     grid-auto-rows: 1fr;
     margin-bottom: 25px;
     padding: 0;
+}
+
+.search-links ul:last-child{
+    display: none;
 }
 
 .search-links ul > li {
@@ -481,6 +486,11 @@ MEDIA QUERIES
     .kbb-trade-in aside span i {
         margin-left: 8px;
         margin-right: -8px;
+    }
+
+    .search-bar-main {
+        padding: 30px;
+        padding-top: 20px;
     }
 
     .over480px {
@@ -545,6 +555,28 @@ MEDIA QUERIES
 
     .over660px {
         display: inline-block;
+    }
+
+    .search-bar-main {
+        padding: 30px 10%;
+    }
+
+    .search-bar-input {
+        width: 60%;
+    }
+
+    .search-links ul {
+        padding: 0;
+    }
+
+    .search-links ul:first-child{
+        display: none;
+    }
+
+    .search-links ul:last-child{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
     .under660px {
