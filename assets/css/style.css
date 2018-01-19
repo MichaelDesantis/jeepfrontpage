@@ -361,7 +361,7 @@ TRADE IN / SITE MAP
     color: #333;
     font-size: 26px;
     font-weight: 700;
-    padding: 0 1em;
+    padding: 0 10px;
 }
 
 .kbb-trade-in aside h5{
@@ -383,6 +383,7 @@ TRADE IN / SITE MAP
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 20px;
+    max-width: 600px;
     padding: 0 5%;
 }
 
@@ -418,6 +419,10 @@ MEDIA QUERIES
         padding-top: 30px;
     }
 
+    .kbb-trade-in aside h3 {
+        padding: 0 1em;
+    }
+
     .kbb-trade-in aside span i {
         margin-left: 8px;
         margin-right: -8px;
@@ -439,6 +444,29 @@ MEDIA QUERIES
 @media screen and (min-width: 660px) {
     header {
         height: 80px;
+    }
+
+    .kbb-trade-in {
+        display: flex;
+        padding: 30px 20px;
+    }
+
+    .kbb-trade-in div {
+        margin: auto;
+    }
+
+    .kbb-trade-in aside {
+        padding: 0 15px;
+        text-align: left;
+    }
+
+    .kbb-trade-in aside h3 {
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .kbb-trade-in aside p {
+        padding: 0;
     }
 
     .image-gallery-main {
@@ -554,6 +582,14 @@ MEDIA QUERIES
         padding-right: 20px;
     }
 
+    .kbb-trade-in {
+        padding: 30px 15%;
+    }
+
+    .kbb-trade-in div {
+        min-width: 150px;
+    }
+
     .menubar {
         width: 39%;
         padding-left: 0px;
@@ -595,6 +631,10 @@ MEDIA QUERIES
     .carousel-inner aside h2 {
         font-size: 50px;
         line-height: 50px;
+    }
+
+    .kbb-trade-in div {
+        margin: auto 0px auto 60px;
     }
 
     .large-menu {
