@@ -398,6 +398,61 @@ TRADE IN / SITE MAP
     width:100%
 }
 
+.search-bar-input {
+    background-color: #FFF;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:35px;
+    width: 100%;
+}
+
+.search-bar-input button {
+    background-color: #FDAD0A;
+    border: 1px solid #FDAD0A;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-sizing: content-box;
+    height: 100%;
+    margin-top: -1px;
+    margin-right: -1px;
+    padding: 0;
+    width: 100px;
+}
+
+.search-bar-input i {
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.search-bar-input input {
+    width: calc(100% - 115px)
+}
+
+.search-bar-main {
+    background-color: #212121;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.search-links ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(140px, 1fr));
+    grid-auto-rows: 1fr;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.search-links ul > li {
+    color: #bfbfbf;
+    font-size: 14px;
+    list-style: none;
+    padding: 6px;
+    width: 140px;
+}
+
 /*****
 SOCIAL MEDIA
 *****/
