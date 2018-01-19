@@ -696,6 +696,34 @@ MEDIA QUERIES
         padding-right: 15px;
     }
 
+    .search-bar-input {
+        flex: 1;
+    }
+
+    .search-links {
+        flex: 2;
+    }
+
+    .search-links ul:last-child {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .search-links ul li {
+        padding: 6px 15px;
+        text-align: center;
+        width: auto;
+    }
+
+    .search-links ul li img{
+        margin-top: -6px;
+    }
+
+    .search-bar-main {
+        display: flex;
+        padding: 35px 8% 20px;
+    }
     .over1000px {
         display: inline-block;
     }
