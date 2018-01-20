@@ -22,7 +22,7 @@ The challenge is pretty straightforward. Recreate an exact copy of the current j
 
 A preliminary examination of the jeep.com website indicates that they're using Webpack, React, jQuery, Google Analytics, and possibly an adobe CMS. I'll attempt to stick to the technologies in use and limit the use of any technologies, frameworks, or libraries that are not in use on the real website.
 
-I'll be using Bootstrap version 4 (in beta as of this writing). However, bootstrap V4 no longer ships with Glyphicons! So I'll be including the font-awesome css for icon styling.
+I'll be using Bootstrap version 4 (was in beta, stable version released as I was working on this project! AWW YEAH!!). However, bootstrap V4 no longer ships with Glyphicons! So I'll be including the font-awesome css for icon styling.
 
 ## Baseline
 
@@ -70,7 +70,7 @@ I've gone ahead and made a few modifications to the copy I built as I saw fit. A
 
 * Added `Noscript` tags. It's important to notify the user if JavaScript is disabled.
 
-* Boost chevron size for dropdown menus and clickable links. The original chevrons appear a font-size or two smaller than the text they're referencing. The original website also appears to, for whatever reason, use several different sizes of them. I decided to standardize and enlarge them a bit to make them stand out more. For reference : 
+* Boost chevron size for dropdown menus and clickable links. The original chevrons appear a font-size or two smaller than the text they're referencing. The original website also appears to, for whatever reason, use several different sizes of them. I decided to standardize and enlarge them a bit to make them stand out more. For reference (screenshotted at different screen resolutions, so padding may differ) : 
 
 Original Header : 
 ![alt tag](./imagesForReadme/chevron-original.png) 
@@ -109,6 +109,12 @@ Once everything is built, I'll audit the website both on Github pages and off of
 ## Thoughts
 
 Use bootstrap mobile visibility classes instead of rolling own utility class. Separate util class if own custom breakpoints are needed.
+
+It's challenging to duplicate a website when the website itself is constantly seeing improvements and bug-fixes. I've noticed several changes throughout the website that were definitely not there when I first began duplicating this website.
+
+As a random and interesting aside: because the original website uses google analytics, and because I've gone from never seeing this website before to visiting it as often as what feels like 100 times a day, every single website I go to now is trying to sell me a brand new 2018 Jeep renegade. I imagine this will keep up for a few weeks at least.
+
+When designing mobile first, it's easy to overlook progressive enhancement opportunities that having a mouse can bring. When you're analyzing a website in a mobile emulator, all :hover pseudo-class rules are ignored because there is no :hover on a mobile device. Remember to un-dock your design every now and then. It can prevent you from having to go back over your entire design to re-add all the hover functionality for desktop and laptop users. 
 
 ## Production
 

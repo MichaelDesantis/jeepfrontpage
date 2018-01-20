@@ -8,8 +8,8 @@ TABLE OF CONTENTS
     Image Banner Carousel
     Image Gallery
     Vehicle Listings
-    Trade in and site map links
-    Social Media Links
+    Trade in and search bar
+    Site Map and Social Media Links
     Footer
     Media Queries
 
@@ -342,7 +342,7 @@ VEHICLE LISTINGS
 }
 
 /*****
-TRADE IN / SITE MAP
+TRADE IN / SEARCH BAR
 *****/
 
 .kbb-trade-in {
@@ -461,8 +461,60 @@ TRADE IN / SITE MAP
 }
 
 /*****
-SOCIAL MEDIA
+SITE MAP / SOCIAL MEDIA
 *****/
+
+.site-map-categories {
+
+}
+
+.site-map-categories ul{
+    padding: 0;
+}
+
+.site-map-categories ul li{
+    border-bottom: 1px solid #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    list-style: none;
+    padding: 13px 0;
+    width: 100%;
+}
+
+.site-map-categories ul li i {
+    float: right;
+    margin-right: 5px;
+}
+
+.site-map-main {
+    padding: 6%;
+}
+
+.social-media {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    display: flex;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.social-media aside {
+    width: 50%;
+}
+
+.social-media aside img {
+    padding-top: 6px;
+}
+
+.social-media aside span {
+    display: inline-block;
+    font-size: 28px;
+    padding-right: 7px; 
+}
+
+.social-media p {
+    font-size: 12px;
+    font-weight: 700;
+}
 
 /*****
 FOOTER
