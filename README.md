@@ -1,14 +1,16 @@
 # JEEP.COM FRONT PAGE PROJECT
 
-I built this website replication from scratch as part of a coding challenge for a Software Developer postion with a startup in North Austin. 
+I built this website replication from scratch as part of a coding challenge for a Software Developer postion with a startup in North Austin. You can see this project deployed at multishifties.github.io/jeepfrontpage/ 
 
 ## Table of contents
 
 * [technical specifications](#specs)
 
-* [copy vs original performance comparison](#baseline)
+* [original website baseline](#baseline)
 
-* [testing and build process](#tests)
+* [build process and differences](#project)
+
+* [copy website performance](#tests)
 
 * [if I had to do it over](#thoughts)
 
@@ -21,10 +23,6 @@ The challenge is pretty straightforward. Recreate an exact copy of the current j
 A preliminary examination of the jeep.com website indicates that they're using Webpack, React, jQuery, Google Analytics, and possibly an adobe CMS. I'll attempt to stick to the technologies in use and limit the use of any technologies, frameworks, or libraries that are not in use on the real website.
 
 I'll be using Bootstrap version 4 (in beta as of this writing). However, bootstrap V4 no longer ships with Glyphicons! So I'll be including the font-awesome css for icon styling.
-
-FONT : Roboto
-FONT COLOR : Pure white on black bg. Pure black on white bg. Shade of grey on grey background.
-ICONS : font-awesome, placed in ::before or own span if necessary.
 
 ## Baseline
 
@@ -60,26 +58,58 @@ As of 1/11/2018 @ 5:30pm CST on a 2016 MacBook Pro 2.7 GHz Intel Core i5 running
 
 * Includes jQuery 1.11.2, which is outdated and may have security vulnerabilities.
 
-* Does not use images with appropriate aspect ratio. 
+* Does not use images with appropriate aspect ratio. (In all fairness, the difference between the actual image aspect ratio and the displayed aspect ratio is less than 10%. And because I'll be re-creating this website using the same images and display size specifications, I fully expect that my copy will suffer from this same issue.)
 
 ## Project
 
-* robots.txt
+I've gone ahead and made a few modifications to the copy I built as I saw fit. Among them are the following : 
 
-* includes manifest
+* Built a simple robots.txt. There's not a lot to see here, this is mostly a spec-compliance thing. 
 
-* noscript tags
+* Includes web manifest. I put together a simple manifest JSON to allow this website to run as a PWA for mobile devices. 
 
-* Boost chevron size
+* Added `Noscript` tags. It's important to notify the user if JavaScript is disabled.
 
-* Change carousel buttons (use bootstrap default)
+* Boost chevron size for dropdown menus and clickable links. The original chevrons appear a font-size or two smaller than the text they're referencing. The original website also appears to, for whatever reason, use several different sizes of them. I decided to standardize and enlarge them a bit to make them stand out more. For reference : 
 
-* Using only Roboto. (Original is using Proxima Nova headers, not free or open source)
+Original Header : 
+![alt tag](./imagesForReadme/chevron-original.png) 
+
+My Header  :
+![alt tag](./imagesForReadme/chevron-copy.png)
+
+* Change carousel buttons. The original website uses a different gliphycon set than I have with Bootstrap. Their carousel buttons, when hovered over, also cast a shadow that does not extend to the bottom of the image carousel. It's a minor bug in the website, and one I had no intention of replicating. I opted instead to use the Bootstrap default carousel buttons (although I did modify them a bit to boost visibility and styling). For reference : 
+
+Original Button : 
+![alt tag](./imagesForReadme/carousel-original.png)
+
+My Button : 
+![alt tag](./imagesForReadme/carousel-copy.png)
+
+* Use only Roboto font at 400/700 weights. The original website uses a mixture of fonts and weights. Including Proxima Nova headers, which unfortunately are not free or open source. On the upside, My website will have one less resource to reqest!
+
+* Changed a few glyphicons. I was told to use bootstrap, so I'm sticking to bootstrap and FA icons. Which means I've had to make a few substitutions. They're minor, but worth a mention.
+
+Original Info Disclaimer : 
+![alt tag](./imagesForReadme/info-original.png)
+
+My Info Disclaimer : 
+![alt tag](./imagesForReadme/info-copy.png)
+
+Original Search Bar : 
+![alt tag](./imagesForReadme/search-original.png)
+
+Copy Search Bar : 
+![alt tag](./imagesForReadme/search-copy.png)
 
 ## Tests
+
+Once everything is built, I'll audit the website both on Github pages and off of a local server and post the results here.
 
 ## Thoughts
 
 Use bootstrap mobile visibility classes instead of rolling own utility class. Separate util class if own custom breakpoints are needed.
 
 ## Production
+
+Minify assets as npm script. Probably use a view engine to allow for ease of content management.
