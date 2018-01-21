@@ -848,14 +848,38 @@ MEDIA QUERIES
         min-width: 150px;
     }
 
+    .large-menu {
+        height: 80px;
+    }
+
     .menubar {
         width: 39%;
         padding-left: 0px;
     }
 
     .menu-li {
+        display: inline-block;
         font-size: 10px;
-        padding: 0px 10px;
+        min-height: 80px;
+        padding: 29px 0 29px 12px;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+    }
+
+    .menu-li:hover {
+        background-color: #3e3e3e;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+    }
+
+    .menu-li:first-child {
+        padding-left: 20px;
+    }
+
+    .menu-li:last-child {
+        margin-left: -6px;
     }
 
     .menubar span {
@@ -863,8 +887,8 @@ MEDIA QUERIES
         padding-right: 10px;
     }
 
-    .menubar:last-child {
-        padding-right: 15px;
+    .menubar span:last-child {
+        padding-right: 20px;
     }
 
     .search-bar-input {
