@@ -178,11 +178,31 @@ IMAGE BANNER CAROUSEL
 .button-row button:first-child {
     color: #000;
     background-color: #FDAD0A;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+}
+
+.button-row button:first-child:hover {
+    background-color: #edad01;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
 }
 
 .button-row button:last-child {
     color: #FFF;
     background-color: #7C7C7C;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+}
+
+.button-row button:last-child:hover {
+    background-color: #4f4f4f;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
 }
 
 .carousel-inner aside {
@@ -287,6 +307,10 @@ IMAGE GALLERY
     width:100%;
 }
 
+.image-gallery-main figure figcaption span:hover {
+    text-decoration: underline;
+}
+
 .image-gallery-main figure figcaption span:first-child {
     padding-left: 20px;
 }
@@ -357,17 +381,21 @@ TRADE IN / SEARCH BAR
     text-align: center;
 }
 
-.kbb-trade-in aside h3{
+.kbb-trade-in aside h3 {
     color: #333;
     font-size: 26px;
     font-weight: 700;
     padding: 0 10px;
 }
 
-.kbb-trade-in aside h5{
+.kbb-trade-in aside h5 {
     display: inline;
     font-size: 13px;
     font-weight: 700;
+}
+
+.kbb-trade-in aside h5:hover {
+    text-decoration: underline;
 }
 
 .kbb-trade-in aside span {
@@ -421,7 +449,18 @@ TRADE IN / SEARCH BAR
     margin-top: -1px;
     margin-right: -1px;
     padding: 0;
+    transition: background-color 0.25s ease-in-out;
     width: 100px;
+    -moz-transition: background-color 0.25s ease-in-out;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    
+}
+
+.search-bar-input button:hover {
+    background-color: #edad01;
+    transition: background-color 0.25s ease-in-out;
+    -moz-transition: background-color 0.25s ease-in-out;
+    -webkit-transition: background-color 0.25s ease-in-out;
 }
 
 .search-bar-input i {
@@ -460,6 +499,10 @@ TRADE IN / SEARCH BAR
     width: 140px;
 }
 
+.search-links ul > li:hover {
+    color: #FFF;
+}
+
 /*****
 SITE MAP / SOCIAL MEDIA
 *****/
@@ -479,6 +522,10 @@ SITE MAP / SOCIAL MEDIA
     list-style: none;
     padding: 13px 0;
     width: 100%;
+}
+
+.site-map-categories ul li:hover {
+    color: #FFF;
 }
 
 .site-map-categories ul li i {
@@ -529,6 +576,7 @@ SITE MAP / SOCIAL MEDIA
 .social-media p {
     font-size: 12px;
     font-weight: 700;
+    margin-bottom: 12px;
 }
 
 /*****
@@ -603,6 +651,7 @@ MEDIA QUERIES
     }
 
     .social-media aside {
+        margin-bottom: 35px;
         width: 100%;
     }
 
@@ -757,12 +806,16 @@ MEDIA QUERIES
         width: 16px;
     }
 
+    .carousel-top-bar li:hover {
+        background-color: #FDAD0A;
+    }
+
     .carousel-top-bar li:last-child {
         border: 2px solid #B0B0B0;
     }
 
     .carousel-inner aside {
-        align-items: left;
+        align-items: flex-start;
         text-align: left;
     }
 
