@@ -472,7 +472,7 @@ SITE MAP / SOCIAL MEDIA
     padding: 0;
 }
 
-.site-map-categories ul li{
+.site-map-categories ul li {
     border-bottom: 1px solid #FFF;
     font-size: 12px;
     font-weight: 700;
@@ -486,12 +486,27 @@ SITE MAP / SOCIAL MEDIA
     margin-right: 5px;
 }
 
+.site-map-categories-extended-menu {
+    display: none;
+}
+
+.site-map-categories-extended-menu p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.site-map-categories-extended-menu ul li {
+    color: #bfbfbf;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: none;
+}
+
 .site-map-main {
     padding: 6%;
 }
 
 .social-media {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
     display: flex;
     padding-bottom: 15px;
     width: 100%;
@@ -520,6 +535,18 @@ SITE MAP / SOCIAL MEDIA
 FOOTER
 *****/
 
+footer {
+    background-color: #000;
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
+    width: 100%;
+}
+
+.footer-main {
+    background-color: #000;
+    padding: 5%;
+    width: 100vw;
+}
+
 /*****
 MEDIA QUERIES
 *****/
@@ -545,6 +572,43 @@ MEDIA QUERIES
     .search-bar-main {
         padding: 30px;
         padding-top: 20px;
+    }
+
+    .site-map-categories {
+        width: 67%;
+    }
+
+    .site-map-categories ul:first-child {
+        display: none;
+    }
+
+    .site-map-categories ul li {
+        padding: 5px 0;
+        padding-right: 35%;
+    }
+
+    .site-map-categories-extended-menu {
+        display: grid;
+        grid-auto-rows: min-content;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-map-main {
+        display: flex;
+    }
+
+    .social-media {
+        flex-direction: column;
+        width: 33%;
+    }
+
+    .social-media aside {
+        width: 100%;
+    }
+
+    .social-media aside span {
+        margin-right: 20px;
+        padding: 0;
     }
 
     .over480px {
