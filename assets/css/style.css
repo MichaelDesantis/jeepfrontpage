@@ -551,6 +551,7 @@ SITE MAP / SOCIAL MEDIA
 
 .site-map-main {
     padding: 6%;
+    padding-bottom: 0;
 }
 
 .social-media {
@@ -564,7 +565,12 @@ SITE MAP / SOCIAL MEDIA
 }
 
 .social-media aside img {
-    padding-top: 6px;
+    display: block;
+    padding: 8px 0;
+}
+
+.social-media aside img:last-child {
+    display: none;
 }
 
 .social-media aside span {
@@ -585,14 +591,55 @@ FOOTER
 
 footer {
     background-color: #000;
+    color: #bfbfbf;
     border-top: 1px solid rgba(255, 255, 255, 0.22);
     width: 100%;
 }
 
+footer p {
+    font-size: 10px;
+}
+
+.footer-brand-links ul {
+    margin: 10px;
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-brand-links ul li {
+    display: inline;
+    font-size: 10px;
+    list-style: none;
+    padding: 8px;
+}
+
+.footer-img-bar {
+    padding: 20px 10px;
+    width: 100%;
+}
+
+.footer-img-bar img {
+    margin: 0 10px;
+}
+
+.footer-img-bar img:first-child {
+    width: 55px;
+}
+
+.footer-img-bar img:last-child {
+    width: 67px;
+}
+
 .footer-main {
     background-color: #000;
-    padding: 5%;
+    padding: 0px 5% 40px 5%;
     width: 100vw;
+}
+
+.footer-p-block {
+    padding: 50px 8px 0 8px; 
 }
 
 /*****
@@ -643,6 +690,7 @@ MEDIA QUERIES
 
     .site-map-main {
         display: flex;
+        padding-bottom: 20px;
     }
 
     .social-media {
@@ -676,6 +724,10 @@ MEDIA QUERIES
 @media screen and (min-width: 660px) {
     header {
         height: 80px;
+    }
+
+    .footer-p-block {
+        padding: 10px 8px 0 8px;
     }
 
     .kbb-trade-in {
@@ -736,14 +788,18 @@ MEDIA QUERIES
         padding: 0;
     }
 
-    .search-links ul:first-child{
+    .search-links ul:first-child {
         display: none;
     }
 
-    .search-links ul:last-child{
+    .search-links ul:last-child {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+
+    .social-media aside img:last-child {
+        display: block;
     }
 
     .under660px {
@@ -826,6 +882,23 @@ MEDIA QUERIES
 
     .carousel-vertical-button {
         display: flex;
+    }
+
+    .footer-brand-links {
+        width: 55%;
+    }
+
+    .footer-img-bar {
+        width: 44%;
+    }
+
+    .footer-main {
+        padding: 0px 7% 40px;
+    }
+
+    .footer-p-block {
+        padding-top: 0; 
+        width: 44%;
     }
 
     .image-gallery-main {
@@ -919,6 +992,64 @@ MEDIA QUERIES
         display: flex;
         padding: 35px 8% 20px;
     }
+
+    .site-map-categories {
+        width: 80%;
+    }
+
+    .site-map-categories-extended-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .site-map-categories-extended-menu div {
+        width: 25%;
+    }
+    /* The below rules are re-ordering content to match original content layout.
+     If you didn't need to display the content in the EXACT same order, 
+     you could leave it as a grid by applying the following to .site-map-categories-extended-menu: 
+        grid-auto-flow: column;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    I actually strongly prefer the grid method.
+    */
+    .site-map-categories-extended-menu div:nth-child(5) {
+        order:2;
+    }
+
+    .site-map-categories-extended-menu div:nth-child(2) {
+        order:3;
+    }
+
+    .site-map-categories-extended-menu div:nth-child(6) {
+        order:4;
+    }
+
+    .site-map-categories-extended-menu div:nth-child(3) {
+        order:5;
+    }
+
+    .site-map-categories-extended-menu div:nth-child(7) {
+        order:6;
+    }
+
+    .site-map-categories-extended-menu div:nth-child(4) {
+        order:7;
+    }
+
+    .site-map-categories-extended-menu div:nth-child(8) {
+        order:8;
+    }
+
+    .site-map-main {
+        padding-bottom: 0;
+    }
+
+    .social-media {
+        width: 20%;
+    }
+
     .over1000px {
         display: inline-block;
     }
