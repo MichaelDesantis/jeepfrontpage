@@ -113,12 +113,12 @@ Lighthouse Audit.
 I'm running this test off of the same computer as before. Here are the results for GitHub Pages (scores higher runing on a local server, but a local server is hardly a good representation of reality).
 
 Github Pages Lighthouse Scores:
-[Github pages lighthouse scores](./imagesForReadme/gh-pages-lighthouse-scores.png)
+![Github pages lighthouse scores](./imagesForReadme/gh-pages-lighthouse-scores.png)
 
 Network Audit.
 
 Github Pages Network Metrics:
-[Github Pages network metrics](./imagesForReadme/gh-pages-network-metrics.png)
+![Github Pages network metrics](./imagesForReadme/gh-pages-network-metrics.png)
 
 [And here's my deployed GH-Pages copy run through a html validator. It's still not perfect, but much improved over the original.](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fmultishifties.github.io%2Fjeepfrontpage%2F)
 
@@ -132,7 +132,7 @@ As a random and interesting aside: because the original website uses google anal
 
 When designing mobile first, it's easy to overlook progressive enhancement opportunities that having a mouse can bring. When you're analyzing a website in a mobile emulator, all :hover pseudo-class rules are ignored because there is no :hover on a mobile device. Remember to un-dock your design every now and then. It can prevent you from having to go back over your entire design to re-add all the hover functionality for desktop and laptop users. (Ask me how I know...)
 
-Sadly, I wasn't able to add all the pop-up/drop-down menu functionality into this website without significantly overshooting my self-imposed 1 business week deadline for this project. If I had more time, I'd definitely add more interactivity to the website. As it is now, I have a JavaScript file being linked in that serves no purpose because I didn't have time to build the extra functionality in.. 
+Sadly, I wasn't able to add all the pop-up/drop-down menu functionality into this website without significantly overshooting my self-imposed 1 business week deadline for this project. If I had more time, I'd definitely add more interactivity to the website. As it is now, I have a JavaScript file being linked in that serves no purpose because I didn't have time to build the extra functionality in.
 
 ## Production
 
