@@ -28,7 +28,7 @@ I'll be using Bootstrap version 4 (was in beta, stable version released as I was
 
 As of 1/11/2018 @ 5:30pm CST on a 2016 MacBook Pro 2.7 GHz Intel Core i5 running OSX 10.11.3, opened in Google Chrome version 63, over a Google Fiber internet setup operating at 52.7 Mbps down and 37.3 Mbps up; jeep.com's front page currently rates in at the following scores using Google Chrome's lighthouse auditing tool:
 
-![alt tag](./imagesForReadme/lighthouse_scores.png)
+![original website lighthouse scores](./imagesForReadme/lighthouse_scores.png)
 
 45/100 on Progressive Web Application. Points of note include : 
 
@@ -42,7 +42,7 @@ As of 1/11/2018 @ 5:30pm CST on a 2016 MacBook Pro 2.7 GHz Intel Core i5 running
 
 * All errors are related to the total size of the web page. At 132 network requests and 3.5MB of data, this website loads slower than most. DOMContent varies between 1.58 - 2.05 seconds, Load between 3.40-4.05 seconds. But network requests continue until Finish which varies between 10.27 and 11.88 seconds.
 
-![alt tag](./imagesForReadme/network_metrics.png)
+![original website network metrics](./imagesForReadme/network_metrics.png)
 
 86/100 on Accessibility
 
@@ -77,45 +77,48 @@ I've gone ahead and made a few modifications to the copy I built as I saw fit. A
 * Boost chevron size for dropdown menus and clickable links. The original chevrons appear a font-size or two smaller than the text they're referencing. The original website also appears to, for whatever reason, use several different sizes of them. I decided to standardize and enlarge them a bit to make them stand out more. For reference (screenshotted at different screen resolutions, so padding may differ) : 
 
 Original Header : 
-![alt tag](./imagesForReadme/chevron-original.png) 
+![original chevrons](./imagesForReadme/chevron-original.png) 
 
 My Header  :
-![alt tag](./imagesForReadme/chevron-copy.png)
+![copy chevrons](./imagesForReadme/chevron-copy.png)
 
 * Change carousel buttons. The original website uses a different gliphycon set than I have with Bootstrap. Their carousel buttons, when hovered over, also cast a shadow that does not extend to the bottom of the image carousel. It's a minor bug in the website, and one I had no intention of replicating. I opted instead to use the Bootstrap default carousel buttons (although I did modify them a bit to boost visibility and styling). For reference : 
 
 Original Button : 
-![alt tag](./imagesForReadme/carousel-original.png)
+![original button](./imagesForReadme/carousel-original.png)
 
 My Button : 
-![alt tag](./imagesForReadme/carousel-copy.png)
+![copy button](./imagesForReadme/carousel-copy.png)
 
 * Use only Roboto font at 400/700 weights. The original website uses a mixture of fonts and weights. Including Proxima Nova headers, which unfortunately are not free or open source. On the upside, My website will have one less resource to reqest!
 
 * Changed a few glyphicons. I was told to use bootstrap, so I'm sticking to bootstrap and FA icons. Which means I've had to make a few substitutions. They're minor, but worth a mention.
 
 Original Info Disclaimer : 
-![alt tag](./imagesForReadme/info-original.png)
+![original info](./imagesForReadme/info-original.png)
 
 My Info Disclaimer : 
-![alt tag](./imagesForReadme/info-copy.png)
+![copy info](./imagesForReadme/info-copy.png)
 
 Original Search Bar : 
-![alt tag](./imagesForReadme/search-original.png)
+![original search bar](./imagesForReadme/search-original.png)
 
 Copy Search Bar : 
-![alt tag](./imagesForReadme/search-copy.png)
+![copy search bar](./imagesForReadme/search-copy.png)
 
 ## Tests
 
 Lighthouse Audit.
 
-I'm running this test off of the same computer as before. Here are the results for GitHub Pages (scores higher runing on a local server, but a local server is hardly a good representation of reality):
-[alt tag](./imagesForReadme/gh-pages-lighthouse-scores.png)
+I'm running this test off of the same computer as before. Here are the results for GitHub Pages (scores higher runing on a local server, but a local server is hardly a good representation of reality).
+
+Github Pages Lighthouse Scores:
+[Github pages lighthouse scores](./imagesForReadme/gh-pages-lighthouse-scores.png)
 
 Network Audit.
 
-[alt tag](./imagesForReadme/gh-pages-network-metrics.png)
+Github Pages Network Metrics:
+[Github Pages network metrics](./imagesForReadme/gh-pages-network-metrics.png)
 
 [And here's my deployed GH-Pages copy run through a html validator. It's still not perfect, but much improved over the original.](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fmultishifties.github.io%2Fjeepfrontpage%2F)
 
