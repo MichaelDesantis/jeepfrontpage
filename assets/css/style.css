@@ -615,6 +615,10 @@ footer p {
     padding: 8px;
 }
 
+.footer-brand-links ul li:hover {
+    color: #FFF
+}
+
 .footer-img-bar {
     padding: 20px 10px;
     width: 100%;
